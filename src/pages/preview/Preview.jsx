@@ -11,7 +11,7 @@ function Preview() {
     const handleNevigate = ()=>{
         nevigate("/")
     }
-    console.log(contact.contact.contact[0].fields);
+    // console.log(contact.contact.contact[0].fields);
   return (
     <Box >
 <AppBar position="static">
@@ -23,7 +23,7 @@ function Preview() {
 <Box sx={{display:"flex",alignItems:"center"}}>
     
 <Card sx={{backgroundImage: "linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114))",width:"100%",padding:"30px",borderRadius:"0px"}}>
-    {contact&&contact.contact&&contact.contact.contact&&contact.contact.contact[0].fields.map((item)=>(
+    {contact&&contact?.contact&&contact?.contact?.contact&&contact?.contact?.contact.length > 0 &&contact?.contact?.contact[0].fields.length>0&&contact.contact.contact[0].fields.map((item)=>(
         <Box>
     <Box>
 {item.type==="mcq"?
