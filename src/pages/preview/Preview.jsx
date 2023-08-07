@@ -20,8 +20,12 @@ function Preview() {
 <Typography onClick={handleNevigate} sx={{cursor:"pointer"}}>Home</Typography>
 </Toolbar>
 </AppBar>
+{!contact?<>
+<Box sx={{display:"flex",justifyContent:"center",alignItems:'center'}}>
+<Typography sx={{fontSize:'40px'}}>Nothing To Preview 🙂</Typography>
+</Box>
+</>:
 <Box sx={{display:"flex",alignItems:"center"}}>
-    
 <Card sx={{backgroundImage: "linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114))",width:"100%",padding:"30px",borderRadius:"0px"}}>
     {contact&&contact?.contact&&contact?.contact?.contact&&contact?.contact?.contact.length > 0 &&contact?.contact?.contact[0].fields.length>0&&contact.contact.contact[0].fields.map((item)=>(
         <Box>
@@ -96,6 +100,7 @@ function Preview() {
      ))} 
 </Card>
 </Box>
+}
     </Box>
   )
 }

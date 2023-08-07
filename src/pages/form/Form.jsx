@@ -82,6 +82,7 @@ const handleNevigate = ()=>{
         </Toolbar>
       </AppBar>
       <Container maxWidth="md" style={{ marginTop: '40px' }}>
+        <Typography sx={{}}>Before Preview first create quetions </Typography>
         <Typography variant="h5" gutterBottom>
           Form Editor
         </Typography>
