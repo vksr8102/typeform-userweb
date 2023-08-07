@@ -182,12 +182,13 @@ const handleNevigate = ()=>{
                       value={option}
                       onChange={(e) => handleOptionChange(index, optionIndex, e.target.value)}
                     />
-                    <Button variant="outlined" color="primary" onClick={() => handleAddOption(index)}>
-                      Add Option
-                    </Button>
+                   
                     <Divider style={{ margin: '10px 0' }} />
                   </div>
                 ))}
+                 <Button variant="outlined" color="primary" onClick={() => handleAddOption(index)}>
+                      Add Option
+                    </Button>
               </>
             )}
           </Box>
