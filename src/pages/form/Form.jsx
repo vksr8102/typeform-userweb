@@ -64,7 +64,8 @@ underlineWords: [...item.underlineWords]
       console.log(field)
       const handleSaveToMongoDb = async()=>{
 const result = await dispatch(createContact({fields:field}))
-console.log(result);
+window.location.reload();
+// console.log(result);
       }
 //-->Nevigation
 
